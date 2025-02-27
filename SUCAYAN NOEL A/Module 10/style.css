@@ -1,0 +1,97 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Pastel blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff9aa2; /* Pastel pink for the heading */
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select, input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:hover, input[type="date"]:hover {
+    border-color: #ff9aa2; /* Pastel pink on hover */
+}
+
+select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #87ceeb; /* Pastel blue on focus */
+    box-shadow: 0 0 8px rgba(135, 206, 235, 0.6);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff9aa2; /* Pastel pink button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7f8e; /* Slightly darker pink on hover */
+}
+
+button:active {
+    background-color: #ff6b7b; /* Even darker pink on click */
+}
+
+/* Additional spacing and styling for better readability */
+br {
+    display: none; /* Remove <br> tags for better spacing control */
+}
+
+/* Optional: Add a subtle animation to the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-in-out;
+}
